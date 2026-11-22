@@ -1,0 +1,21 @@
+# Dataset and model locations. Edit this file or set them in Step 1 of ROI_representation.ipynb (which rewrites it).
+# Relative paths are relative to the repository root. Leave a value empty ('') if you do not have that data;
+# the steps that need it are then skipped.
+
+# The 34 neonatal videos (*.mp4). File names and SHA-256 hashes must match runs/final34_paper/manifest.csv.
+# These videos are third-party web videos and are not distributed with the repository.
+neonatal_videos: ''
+
+# UBFC-rPPG "DATASET_2" root folder that contains subject1/, subject3/ and subject4/ (vid.avi + ground_truth.txt).
+# Download from the dataset authors: https://sites.google.com/view/ybenezeth/ubfcrppg
+ubfc_rppg: ''
+
+# DataAugment videos: a folder that contains (or will receive) data/, data_motion_fast/ and data_motion_fast_xl/.
+# If it already holds the perturbed videos, generation is skipped; otherwise Step B3 writes them here.
+dataaugment_videos: 'work/dataaugment_videos'
+
+# All other derived videos (lossless UBFC copies, swaddling, swaddling + motion, occlusion videos) are written here.
+derived_videos: 'work/derived_videos'
+
+# Model weights (Step 3 downloads them here if missing).
+models: 'models'

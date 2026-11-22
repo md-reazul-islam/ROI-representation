@@ -1,0 +1,13 @@
+windows_set,method,windows,no_hr,mae,within5_pct
+occluded,Fixed box,28,0,21.41,35.7
+occluded,Module 1 v1,28,0,3.58,92.9
+occluded,Module 1 v2 D5,28,0,2.96,92.9
+occluded,D8,28,0,9.12,64.3
+all,Fixed box,46,0,14.99,50.0
+all,Module 1 v1,46,0,3.02,93.5
+all,Module 1 v2 D5,46,0,2.56,95.7
+all,D8,46,0,6.31,78.3
+original video (no hand),Fixed box,46,0,1.9,97.8
+original video (no hand),Module 1 v1,46,0,1.89,97.8
+original video (no hand),Module 1 v2 D5,46,0,1.93,97.8
+original video (no hand),D8,46,0,1.93,97.8

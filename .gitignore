@@ -1,0 +1,19 @@
+# data, models and run outputs are not part of the repository
+/data/
+/models/
+/external/
+/work/
+/logs/
+runs/*/outputs/
+runs/ubfc_*/
+module1_v2/runs/*/features/
+module1_v2/runs/*/dynamic_roi_v2_*/
+dataaugment/data*/
+dataaugment/hr_eval/videos*/
+*.mkv
+*.avi
+*.mp4
+*.pt
+*.safetensors
+__pycache__/
+.ipynb_checkpoints/

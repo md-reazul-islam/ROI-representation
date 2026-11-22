@@ -1,0 +1,4 @@
+# Optional Phase 7 environment: Python >=3.12. Review upstream LICENSE.md.
+-r requirements.txt
+safetensors>=0.8.0
+sapiens @ git+https://github.com/facebookresearch/sapiens2.git@7e5bae88456ac418ff0e58e74106c9fe192055d4

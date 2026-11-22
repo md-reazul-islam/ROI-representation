@@ -1,0 +1,6 @@
+# Versions verified in the project environment (miniconda3/envs/module1, Python 3.12).
+# All four are already installed there; nothing new is required.
+numpy>=1.26        # verified 2.5.4
+opencv-python>=4.8 # verified 4.14.0.94 (needs its bundled FFmpeg with the FFV1 encoder)
+scipy>=1.11        # verified 1.18.1
+PyYAML>=6.0        # verified 6.0.3

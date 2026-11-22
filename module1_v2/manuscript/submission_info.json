@@ -1,0 +1,45 @@
+{
+  "_README": "Author and declaration details used by build_submission.py. Any value starting with 'FILL' is printed in the manuscript as a visible [FILL: ...] marker and listed in SUBMISSION_CHECKLIST.md. Values marked in 'to_confirm' were drafted for you and must be checked before submission. Edit this file and rebuild; nothing else needs to change.",
+  "authors": [
+    {
+      "name": "Md. Reazul Islam",
+      "affiliations": [
+        "a"
+      ],
+      "email": "FILL: corresponding author e-mail",
+      "orcid": "",
+      "corresponding": true
+    },
+    {
+      "name": "FILL: co-author names (one entry per author; copy this block), e.g. the supervisor",
+      "affiliations": [
+        "a"
+      ],
+      "email": "",
+      "orcid": "",
+      "corresponding": false
+    }
+  ],
+  "affiliations": {
+    "a": "FILL: department, university, city, postal code, country"
+  },
+  "declarations": {
+    "credit": {
+      "Md. Reazul Islam": "Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Visualization, Writing – original draft",
+      "FILL: co-author names (one entry per author; copy this block), e.g. the supervisor": "FILL: CRediT roles, e.g. Supervision, Writing – review & editing"
+    },
+    "competing": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+    "funding": "FILL: funding sources with grant numbers, or: This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",
+    "irb": "FILL: institutional review board determination for the use of the public web videos (e.g. exempt or not human-subjects research, with institution and protocol number)",
+    "repository_url": "https://github.com/md-reazul-islam/ROI-representation",
+    "ai_tool": "Claude (Anthropic)",
+    "ai_purpose": "to assist with drafting and editing the text and with writing analysis and figure code",
+    "acknowledgements": ""
+  },
+  "to_confirm": [
+    "CRediT roles of every author",
+    "Declaration of competing interest (standard 'no competing interests' wording)",
+    "Generative-AI declaration (tool and purpose)",
+    "Ethics statement facts: the web videos were publicly accessible, nobody was contacted, no personal metadata were stored, the infant face in Figure 1 is blurred"
+  ]
+}

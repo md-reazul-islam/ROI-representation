@@ -1,0 +1,40 @@
+{
+  "run": "runs/final34_paper",
+  "v1_report": "reports/paper_final34_paper",
+  "tau_db": -4.2413990490461835,
+  "phase2": {
+    "top_k": 3,
+    "grid_rows": 4,
+    "grid_cols": 4,
+    "surrogates_phase": 49,
+    "surrogates_shuffle": 19,
+    "shuffle_block_sec": 0.25,
+    "null_percentile": 95.0,
+    "agreement_bpm": 6.0,
+    "seed": 42
+  },
+  "configs": [
+    "B0",
+    "B1",
+    "Full",
+    "D3",
+    "D4",
+    "D5",
+    "M0",
+    "M1",
+    "M2",
+    "M3"
+  ],
+  "regression_max_abs_window_snr_diff": {
+    "Full": 4.440892098500626e-16,
+    "D3": 8.881784197001252e-16,
+    "D4": 0.0,
+    "D5": 2.220446049250313e-16,
+    "B0": 4.440892098500626e-16,
+    "B1": 4.440892098500626e-16
+  },
+  "wall_time_sec": 86.18968959525228,
+  "per_video_sec": {
+    "VID_001": 86.00923480372876
+  }
+}

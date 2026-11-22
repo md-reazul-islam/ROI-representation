@@ -1,0 +1,20 @@
+{
+  "surrogates": 49,
+  "shuffle_block_sec": 0.25,
+  "true_pulse_120bpm": {
+    "windows": 9,
+    "observed_snr_median_db": 6.995030061098731,
+    "phase_null_p95_db": 8.378848536288944,
+    "phase_null_pass_percent": 0.0,
+    "shuffle_null_p95_db": -1.9656467401187734,
+    "shuffle_null_pass_percent": 100.0
+  },
+  "static_patch": {
+    "windows": 9,
+    "observed_snr_median_db": -5.981156492436863,
+    "phase_null_p95_db": -2.384356156734842,
+    "phase_null_pass_percent": 33.33333333333333,
+    "shuffle_null_p95_db": -1.464612531773665,
+    "shuffle_null_pass_percent": 0.0
+  }
+}

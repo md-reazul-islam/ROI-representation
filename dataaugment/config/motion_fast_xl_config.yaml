@@ -1,0 +1,34 @@
+# Fast motion, EXTRA-LARGE severity only (same seed and trajectories as motion_fast_config.yaml, scaled).
+# DataAugment outputs and their validation_report.json / manifest.csv are not touched.
+#   python dataaugment/main.py --config dataaugment/config/motion_fast_xl_config.yaml
+input_dir: data/ubfc
+output_dir: dataaugment/data_motion_fast_xl
+n_videos: 1
+assignment: [motion_fast]        # subject1 (same source as the slow motion category)
+seed: 20261114
+run_severities: [xlarge]        # only this level; small/medium/large are in data_motion_fast/
+copy_ground_truth: true
+preview_frames: [0.1, 0.35, 0.6, 0.85]
+bands_hz:
+  rr: [0.15, 1.5]
+  hr: [0.7, 4.0]
+narrowband_power_threshold: 0.01
+narrowband_peak_ratio: 10.0
+
+motion_fast:
+  event_interval_s: 3.0          # mean time between repositioning moves (Poisson, no rhythm)
+  min_gap_s: 1.0
+  first_event_s: 2.0             # first 2 s unchanged so a box fixed on frame 0 fits the subject
+  move_duration_s: [0.25, 0.6]   # each move is fast (minimum-jerk profile)
+  y_ratio: 0.6                   # vertical range = 0.6 x horizontal (face stays inside the 480-px height)
+  drift_cutoff_hz: 0.08
+  tremor_band_hz: [6.0, 10.0]
+  interpolation: lanczos4
+  border_mode: constant
+  # subject1: face ~146 px wide; fixed box (centre 50 % of first person box) ~221 x 183 px.
+  # translation_px = max shift; small ~0.35, medium ~0.7, large ~1.1 face widths.
+  severities:
+    small:  {translation_px: 50,  rotation_deg: 4.0,  zoom_frac: 0.03, drift_px: 5,  tremor_px_rms: 0.5}
+    medium: {translation_px: 100, rotation_deg: 8.0,  zoom_frac: 0.06, drift_px: 10, tremor_px_rms: 1.0}
+    large:  {translation_px: 160, rotation_deg: 12.0, zoom_frac: 0.10, drift_px: 15, tremor_px_rms: 1.5}
+    xlarge: {translation_px: 230, rotation_deg: 15.0, zoom_frac: 0.12, drift_px: 20, tremor_px_rms: 2.0}   # ~1.6 face widths

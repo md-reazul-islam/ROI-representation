@@ -1,0 +1,13 @@
+claim,rule,result,detail
+D8 handles occlusion,D8 - fixed box CI upper < 0 at medium or large,NOT supported,levels: none
+D8 handles swaddling,D8 - fixed box CI upper < 0 at medium or large,NOT supported,levels: none
+No harm vs D5: Motion (slow drift),D8 - D5 CI lower <= 0 at every level; final34 within 5 pp,SUPPORTED,never clearly worse than D5
+Best: Motion (slow drift),D8 - fixed CI < 0 and D8 - D5 CI upper <= 0,NOT supported,
+"No harm vs D5: Fast, large motion",D8 - D5 CI lower <= 0 at every level; final34 within 5 pp,NOT supported,D8 clearly worse at: small
+"Best: Fast, large motion",D8 - fixed CI < 0 and D8 - D5 CI upper <= 0,SUPPORTED at extra-large,
+No harm vs D5: Occlusion (hand + blanket),D8 - D5 CI lower <= 0 at every level; final34 within 5 pp,NOT supported,D8 clearly worse at: medium
+Best: Occlusion (hand + blanket),D8 - fixed CI < 0 and D8 - D5 CI upper <= 0,NOT supported,
+No harm vs D5: Lighting,D8 - D5 CI lower <= 0 at every level; final34 within 5 pp,SUPPORTED,never clearly worse than D5
+Best: Lighting,D8 - fixed CI < 0 and D8 - D5 CI upper <= 0,NOT supported,
+No harm vs D5: Swaddling (cloth up to chest / chin / mouth),D8 - D5 CI lower <= 0 at every level; final34 within 5 pp,SUPPORTED,never clearly worse than D5
+Best: Swaddling (cloth up to chest / chin / mouth),D8 - fixed CI < 0 and D8 - D5 CI upper <= 0,NOT supported,

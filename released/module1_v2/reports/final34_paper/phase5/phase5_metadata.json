@@ -1,0 +1,22 @@
+{
+  "run": "runs/final34_paper",
+  "sampled_frames": 11011,
+  "gpu_peak_mib": 5931.0,
+  "strides": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "configs": [
+    "D0",
+    "D3",
+    "D5"
+  ],
+  "projection": "summed stage time (both SAM 2 / no-SAM 2 branches, which ran concurrently, so this exceeds wall clock); per-frame stages scaled by 1/stride; other stages fixed; stages NOT re-run",
+  "base_run_wall_clock_hours": 20.635,
+  "stabilizer_rescaling": "ema_beta -> beta**s; hysteresis_frames -> round(N/s)",
+  "tau_db": -4.2413990490461835,
+  "lighter_pose": "not evaluated: no checkpoint other than Sapiens2-0.4B available",
+  "wall_time_sec": 5070.305758362636
+}

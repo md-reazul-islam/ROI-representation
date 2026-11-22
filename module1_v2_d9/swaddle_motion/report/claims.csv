@@ -1,0 +1,5 @@
+claim,statement,rule,result,detail
+M1 (primary),D5 more accurate than the fixed box: swaddle medium + fast motion,D5 - fixed CI upper < 0 (pooled) and D5 better in >= 2 of 3 subjects,SUPPORTED,"-26.69 [-38.04, -21.76], n=59, subjects 3/3"
+M2,D5 more accurate than the fixed box: swaddle large + fast motion,D5 - fixed CI upper < 0 (pooled) and D5 better in >= 2 of 3 subjects,SUPPORTED,"-17.99 [-31.49, -13.60], n=48, subjects 2/3"
+M3,D9 more accurate than the fixed box: swaddle medium + fast motion,D9 - fixed CI upper < 0 (pooled) and D9 better in >= 2 of 3 subjects,SUPPORTED,"-26.69 [-37.97, -21.34], n=59, subjects 3/3  (D9: usable only if D9 no-harm passes)"
+M4,D9 more accurate than the fixed box: swaddle large + fast motion,D9 - fixed CI upper < 0 (pooled) and D9 better in >= 2 of 3 subjects,SUPPORTED,"-13.56 [-23.63, -10.46], n=65, subjects 3/3  (D9: usable only if D9 no-harm passes)"

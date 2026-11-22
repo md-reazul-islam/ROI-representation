@@ -1,0 +1,49 @@
+# Fixed vs dynamic ROI comparison (scripts/compare_roi_fixed_vs_dynamic.py).
+# Freeze this file BEFORE looking at test results. Nothing here is tuned on evaluation videos.
+
+methods:                  # every method goes through the same 8 s / 1 s HR chain (POS, gate 1, gate 2, Kalman)
+  - B0                    # fixed: centre 50 % of the FIRST infant box, whole video (no tracking)
+  - B0_WIN                # piecewise fixed: B0 box re-placed on the infant at the start of each 8 s window, held 8 s
+  - B1                    # fixed: first-frame best anatomical region, whole video (no tracking)
+  - FACE_TRACK            # tracked face box: bounding rectangle of the FACE region in every sampled frame
+  - M0                    # whole infant mask x skin inside the tracked infant box (no anatomy, no scoring)
+  - D5                    # Module 1 v2 dynamic ROI: stabilized top-3 selection and weights (may switch inside a window)
+  - D5_WIN                # D5 tracked every frame, selection + weights frozen per 8 s window (window-mean, top 3)
+  - D5_HR                 # Module 1 v2 dynamic ROI + HR-specific region selection (as in the infant notebook)
+  - BG                    # NEGATIVE CONTROL (not a method): frame-corner background patches, no skin filter
+baseline: B0              # paired tests: every method vs this one ...
+dynamic: D5_HR            # ... and every method vs this one
+fixed_methods_use_mask: false   # B0 / B1 / FACE_TRACK see the plain frame (what a fixed / face box sees); skin filter as all
+d5_hr_gate2_mode: fallback      # D5_HR gate 2 as in the infant notebook; all other methods use left / right halves
+b0_win_context_sec: 2.0         # B0_WIN: box also held 2 s before / after its window so POS / filters settle (HR = window only)
+d5_win_top_k: 3                 # D5_WIN: regions kept per window (same k as D5)
+effects:                        # report.md 'Effects' table: name -> [method, minus this method] (paired per video)
+  switching:            [D5_WIN, D5]       # freezing the selection per window vs letting it switch
+  tracking_replaced:    [B0_WIN, B0]       # re-placing the box every window vs one box for the whole video
+  tracking_face:        [FACE_TRACK, B0]   # tracked face box vs fixed box
+  selection:            [D5_HR, D5_WIN]    # HR-specific region choice vs window-locked D5 choice
+  dynamic_vs_fixed:     [D5_HR, B0]        # the headline claim
+  dynamic_vs_face:      [D5_HR, FACE_TRACK]
+
+# Window conditions. null = tertile of the pooled windows of this run (label-free, outcome-free): a window is
+# "hard" for a measure when it lies in the worst third. Give a number to use a fixed threshold instead
+# (recommended for the final, frozen study so that "moving" means the same thing in every dataset).
+conditions:
+  moving:              {measure: motion_body,        hard: high, threshold: null}  # Module 1 v2 ROI motion magnitude
+  camera_motion:       {measure: motion_camera_px,   hard: high, threshold: null}  # median background flow (px / frame)
+  posture_change:      {measure: posture_index,      hard: high, threshold: null}  # infant-box shift / aspect change
+  covered_low_skin:    {measure: skin_visible,       hard: low,  threshold: null}  # visible skin of HR regions (blanket)
+  occluded_few_regions: {measure: regions_available, hard: low,  threshold: null}  # share of HR regions visible
+  illumination_change: {measure: illumination_change, hard: high, threshold: null} # (max - min) / mean subject luminance
+  dark:                {measure: illumination_level, hard: low,  threshold: null}  # mean subject luminance (0-255)
+  blurry:              {measure: sharpness,          hard: low,  threshold: null}  # variance of Laplacian of the subject
+hr_candidates: [FACE, FOREHEAD, LEFT_CHEEK, RIGHT_CHEEK, UPPER_FACE, UPPER_CHEST]
+sharpness_every_n_frames: 3
+sharpness_width_px: 160         # subject crop resized to this width before the Laplacian (resolution-independent)
+manual_label_min_overlap: 0.5   # a manual condition label applies to a window it covers by >= 50 %
+
+reference:
+  tolerance_bpm: 5.0
+  nearest_max_sec: 1.0          # no reference sample inside the window: nearest sample within 1 s of the centre
+bootstrap: 5000
+seed: 42

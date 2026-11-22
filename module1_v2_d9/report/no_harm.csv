@@ -1,0 +1,21 @@
+run,video_id,category,severity,mae_D5,mae_D9,nohr_D5,nohr_D9,windows,mean_diff_bpm,ci95_low,ci95_high,verdict
+ubfc_flat_38d8f553,NEW_subject1,original,none,1.926101418510178,1.926101418510178,0,0,46,0.0,0.0,0.0,no clear difference
+ubfc_flat_38d8f553,NEW_subject3,original,none,2.7052729205078427,2.7052729205078427,0,0,53,0.0,0.0,0.0,no clear difference
+ubfc_flat_38d8f553,NEW_subject4,original,none,2.13062933604314,2.13062933604314,0,0,38,0.0,0.0,0.0,no clear difference
+ubfc_aug,NEW_subject1_motion_large,motion,large,1.7808275302677756,1.7808711066169196,0,0,46,4.357634914397146e-05,-0.0011613437679364748,0.0007556926368084541,no clear difference
+ubfc_aug,NEW_subject1_motion_medium,motion,medium,2.0819335226775864,2.0836273309065616,0,0,46,0.0016938082289752658,-0.0039715009339098125,0.005903692135744459,no clear difference
+ubfc_aug,NEW_subject1_motion_small,motion,small,2.1108775099358614,2.1108775099358614,0,0,46,0.0,0.0,0.0,no clear difference
+ubfc_aug,NEW_subject3_occlusion_large,occlusion,large,19.530984154420803,15.56430363177987,7,0,46,-3.802772493268462,-9.657851716729294,2.3897077907996676,no clear difference
+ubfc_aug,NEW_subject3_occlusion_medium,occlusion,medium,16.278021296514414,16.387662345363914,0,0,53,0.10964104884949663,-2.4979119380574883,1.7806314350451207,no clear difference
+ubfc_aug,NEW_subject3_occlusion_small,occlusion,small,13.670850047461933,14.707305085412715,0,0,53,1.0364550379507866,-2.246231664213524,5.661864402715909,no clear difference
+ubfc_aug,NEW_subject4_lighting_large,lighting,large,2.8001923807471134,2.8001923807471134,0,0,38,0.0,0.0,0.0,no clear difference
+ubfc_aug,NEW_subject4_lighting_medium,lighting,medium,2.859446245004058,2.859446245004058,0,0,38,0.0,0.0,0.0,no clear difference
+ubfc_aug,NEW_subject4_lighting_small,lighting,small,2.4575224988091744,2.4575224988091744,0,0,38,0.0,0.0,0.0,no clear difference
+ubfc_aug_fast,NEW_subject1_motion_fast_large,motion_fast,large,1.935137069437398,1.9352577435630887,0,0,46,0.00012067412569062635,-1.3812161950988373e-06,0.00014001793211903027,no clear difference
+ubfc_aug_fast,NEW_subject1_motion_fast_medium,motion_fast,medium,2.0436538295682163,2.044008376609965,0,0,46,0.00035454704174868635,-0.00014129316607130579,0.0008895930253101825,no clear difference
+ubfc_aug_fast,NEW_subject1_motion_fast_small,motion_fast,small,1.7376956074547965,1.7376956074547965,0,0,46,0.0,0.0,0.0,no clear difference
+ubfc_aug_fast_xl,NEW_subject1_motion_fast_xlarge,motion_fast,xlarge,1.978453364521192,1.9788163361387,0,0,46,0.00036297161750800785,-9.584885103942475e-06,0.0010555731304401166,no clear difference
+ubfc_occdemo,NEW_subject1_democentre,occlusion_demo,centre,2.5568911692855205,2.6255406628156046,0,0,46,0.0686494935300842,-0.2750792076335053,0.28625040129769996,no clear difference
+ubfc_swaddle,NEW_subject1_swaddle_large,swaddle (development),large,15.881408885658281,3.2458048829872554,37,0,9,-14.080154678630551,,,no clear difference
+ubfc_swaddle,NEW_subject1_swaddle_medium,swaddle (development),medium,2.4405729712690953,1.9640557815535866,2,0,44,-0.5031967329937191,-0.5033791120778317,0.03125606889722557,no clear difference
+ubfc_swaddle,NEW_subject1_swaddle_small,swaddle (development),small,2.140444169084664,2.140444169084664,0,0,46,0.0,0.0,0.0,no clear difference

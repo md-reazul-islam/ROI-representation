@@ -1,0 +1,49 @@
+# Module 2 v2 (HR + RR from the Module 1 v2 dynamic ROI representation). Nothing here is tuned on the evaluation
+# videos; signal-processing constants are those of Module 2 v1 (src/module2: HRConfig, RRConfig) unless listed.
+input:
+  module1_config: D5          # Module 1 v2 configuration whose representation is used (D5 = corrected terms + stabilizer)
+hr:
+  surrogates: 49              # surrogates of the same pixels (pulse-present test)
+  null: shuffle               # primary null: block shuffling (validated on synthetic video); 'phase' is diagnostic only
+  shuffle_block_sec: 0.25
+  diagnostic_surrogates: 19   # for the diagnostic phase null
+  null_percentile: 95.0
+  agreement_bpm: 6.0          # split-half agreement of the two disjoint halves of the selected regions
+  gate2_mode: strict          # strict = original left/right gate 2 (missing half -> 'present'); fallback = first available
+                              # pair of left_right, face_chest, top_bottom; none available -> 'validated_one_side' (hr_specific only)
+  one_side_noise_factor: 2.0  # fallback: Kalman measurement-noise variance x this for 'validated_one_side' windows
+  region_set: module1         # module1 = Module 1 v2 top 3 and weights (same as Module 2 v2); hr_specific = own HR set
+  hr_specific:
+    candidates: [FACE, FOREHEAD, LEFT_CHEEK, RIGHT_CHEEK, UPPER_FACE, UPPER_CHEST]   # limbs, head/hair excluded
+    k: 3                      # regions fused
+    min_skin_px: 150          # median skin pixels in the window (native resolution)
+    min_skin_fraction: 0.30   # skin pixels / polygon area: covered (blanket, clothes) regions drop out
+    min_available_fraction: 0.9
+    max_overlap: 0.30         # never two regions overlapping more than this (intersection / smaller area)
+    history_sec: 20           # pulse evidence from windows that END before the current window starts, within 20 s
+    evidence_scale_db: 2.0    # score = prior x sigmoid(mean excess SNR over the region's own null / 2 dB)
+    region_surrogates: 19     # block-shuffle surrogates per region for its own null threshold
+    hysteresis_delta: 0.10    # a new set must score 10 % higher ...
+    hysteresis_windows: 3     # ... for 3 consecutive windows before the set switches
+    min_relative_score: 0.25  # a region joins only if its score is >= 25 % of the best (and, with history, beats its null)
+rr:
+  rois: [UPPER_CHEST, LOWER_CHEST, ABDOMEN, THORACO_ABDOMINAL]   # ALL candidates of these regions, not only the HR selection
+  chest_group: [UPPER_CHEST, LOWER_CHEST]
+  abdomen_group: [ABDOMEN]
+  weight_temperature: 0.1     # softmax(q_v2 / T) over the respiratory regions available in the window
+  surrogates: 49              # block-shuffled surrogates of the same motion traces (breathing-present test)
+  shuffle_block_sec: 0.25
+  null_percentile: 95.0
+  agreement_brpm: 5.0         # chest vs abdomen agreement
+  reference_flow_width: 320   # Module 2 v1 measures flow at 320 px width; amplitudes are rescaled to it
+  confound:                   # camera-confound check (added after NEW_1104, a hand-held phone video)
+    enabled: true
+    reference_regions: [HEAD, FACE]   # non-breathing ROIs of the same infant
+    tolerance_brpm: 3         # reference peak this close to the window rate = confounded
+    min_concentration: 0.30   # camera motion must be clearly rhythmic
+    min_amplitude_ratio_camera: 4.0   # camera motion at the rate >= this many times the torso motion
+    min_amplitude_ratio_body: 2.5     # head motion at the rate >= this many times the torso motion
+    min_amplitude_ratio_body_unknown_camera: 0.5   # camera not measurable (black bars): strict, sway cannot be excluded
+    body_requires_camera_ratio: 1.0   # with a measured camera: body check only when it moves at the rate >= this x torso
+    narrowband_hz: 0.08
+seed: 42

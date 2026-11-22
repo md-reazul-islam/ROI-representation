@@ -1,0 +1,5 @@
+claim,statement,rule,result,detail
+S1 (primary),D9 recovers HR under heavy swaddling where D5 fails,large: D9 - D5 CI upper < 0,NOT supported,"+0.00 [0.00, 0.00], n=91"
+S2,D9 comparable to the fixed box under swaddling (margin 2 bpm),every level: D9 - fixed CI upper <= +2,NOT supported,"small [0.52, 1.97]; medium [-0.41, 0.30]; large [0.50, 2.17]"
+S3,D9 beats the fixed box under swaddling,D9 - fixed CI upper < 0 at some level,NOT supported,
+No harm,D9 never clearly worse than D5 on existing conditions; final34 within 5 pp,D9 - D5 CI lower <= 0 for every existing video; final34 PASS,SUPPORTED,never clearly worse; final34 PASS

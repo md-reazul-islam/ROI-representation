@@ -1,0 +1,40 @@
+# Caregiver contact detection (add-on of "HR RR using module1 v2"; Module 1 v2 and module2_v2 are not touched).
+# All values were fixed a priori from general geometry, NOT tuned on any evaluation video.
+models:
+  pose: models/yolo11s-pose.pt      # COCO 17-keypoint person pose (Ultralytics YOLO11s): adult wrists / elbows
+  seg: models/yolo11s-seg.pt        # COCO instance segmentation (Ultralytics YOLO11s): adult silhouettes
+  imgsz: 640
+  person_conf: 0.25                 # minimum detection confidence for a person
+sampling:
+  fps: 10                           # frames analysed per second of video
+infant:                             # which person detection is the infant itself (never counted as an adult)
+  iou_infant: 0.30                  # a detection overlapping the Module 1 final infant box by IoU >= this is the infant
+  min_outside_fraction: 0.25        # an adult must have >= 25 % of its box outside the infant box (enlarged 5 %):
+                                    # caregivers enter from outside the infant region
+  infant_mask_fraction: 0.60        # a silhouette with >= 60 % of its pixels inside the SAM 2 mask is part of the infant
+  torso_inside_fraction: 0.50       # a pose whose confident shoulders / hips lie >= 50 % inside the infant mask is the infant
+  own_wrist_diag_fraction: 0.01     # adult hand points closer than 1 % of the diagonal to an infant wrist are dropped
+contact:                          # cue 1 (hand): an adult hand point near the infant mask
+  margin_diag_fraction: 0.02        # contact distance = 2 % of the frame diagonal (~44 px at 1920x1080)
+  wrist_conf: 0.30                  # minimum wrist keypoint confidence
+  hand_extension: 0.35              # hand point = wrist + 0.35 x (wrist - elbow) (palm centre), wrist if no elbow
+body:                             # cue 3 (body): adult silhouette touching the infant mask. Reported, NOT used for contact
+  triggers_contact: false           # by default: in 2-D an adult standing behind the infant looks the same as touching
+  margin_diag_fraction: 0.005       # silhouette pixels within 0.5 % of the diagonal of the infant mask ...
+  overlap_min_fraction: 0.015       # ... >= 1.5 % of the infant-mask area ...
+  overlap_min_px: 1000              # ... and >= 1000 px
+mask_change:                        # cue 2 (SAM 2): the infant mask suddenly grows = something entered the mask
+  growth_ratio: 1.40                # mask area > 1.40 x baseline (an infant cannot grow 40 % between frames) = contact
+  shrink_ratio: 0.60                # mask area < 0.60 x baseline: reported only (mask_shrink); SAM 2 also shrinks when it
+                                    # corrects an over-segmentation, so a shrink is not evidence of a caregiver
+  baseline_sec: 10                  # baseline = median area of the clean masks of the previous 10 s
+  init_sec: 2                       # initial baseline: median of the first 2 s
+  max_flag_sec: 60                  # a change lasting > 60 s is accepted as the new baseline (re-framing)
+temporal:
+  smooth_frames: 5                  # majority vote over 5 analysed frames (0.5 s at 10 fps)
+  merge_gap_sec: 1.0                # contact episodes closer than this are merged
+  min_segment_sec: 0.3              # shorter episodes are dropped
+  pad_sec: 1.0                      # every episode is padded by 1 s on both sides (approach / withdrawal)
+windows:
+  min_overlap_fraction: 0.0         # a window overlapping a padded episode by more than this is 'caregiver_intervention'
+                                    # (0 = any overlap, the conservative choice for accuracy evaluation)

@@ -1,0 +1,7 @@
+state,roi,weight_share_pct
+clean,FOREHEAD,33.5
+clean,RIGHT_CHEEK,33.1
+clean,UPPER_FACE,33.4
+hand on,FOREHEAD,33.5
+hand on,RIGHT_CHEEK,32.9
+hand on,UPPER_FACE,33.6

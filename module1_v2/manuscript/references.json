@@ -1,0 +1,2073 @@
+[
+ {
+  "n": 1,
+  "type": "journal",
+  "venue": "Optics Express",
+  "venue_abbrev": "Opt. Express",
+  "title": "Remote plethysmographic imaging using ambient light",
+  "volume": "16",
+  "issue": "26",
+  "pages": "21434-21445",
+  "article": "",
+  "year": 2008,
+  "doi": "10.1364/oe.16.021434",
+  "authors": [
+   [
+    "Wim",
+    "Verkruysse"
+   ],
+   [
+    "Lars O",
+    "Svaasand"
+   ],
+   [
+    "J Stuart",
+    "Nelson"
+   ]
+  ]
+ },
+ {
+  "n": 2,
+  "type": "journal",
+  "venue": "IEEE Transactions on Biomedical Engineering",
+  "venue_abbrev": "IEEE Trans. Biomed. Eng.",
+  "title": "Robust pulse rate from chrominance-based rPPG",
+  "volume": "60",
+  "issue": "10",
+  "pages": "2878-2886",
+  "article": "",
+  "year": 2013,
+  "doi": "10.1109/TBME.2013.2266196",
+  "authors": [
+   [
+    "Gerard",
+    "de Haan"
+   ],
+   [
+    "Vincent",
+    "Jeanne"
+   ]
+  ]
+ },
+ {
+  "n": 3,
+  "type": "journal",
+  "venue": "IEEE Transactions on Biomedical Engineering",
+  "venue_abbrev": "IEEE Trans. Biomed. Eng.",
+  "title": "Algorithmic Principles of Remote PPG",
+  "volume": "64",
+  "issue": "7",
+  "pages": "1479-1491",
+  "article": "",
+  "year": 2017,
+  "doi": "10.1109/TBME.2016.2609282",
+  "authors": [
+   [
+    "Wenjin",
+    "Wang"
+   ],
+   [
+    "Albertus C.",
+    "den Brinker"
+   ],
+   [
+    "Sander",
+    "Stuijk"
+   ],
+   [
+    "Gerard",
+    "de Haan"
+   ]
+  ]
+ },
+ {
+  "n": 4,
+  "type": "conference",
+  "venue": "Proceedings of the European Conference on Computer Vision (ECCV)",
+  "venue_abbrev": "Proc. Eur. Conf. Comput. Vis. (ECCV)",
+  "title": "DeepPhys: Video-Based Physiological Measurement Using Convolutional Attention Networks",
+  "volume": "",
+  "issue": "",
+  "pages": "356-373",
+  "article": "",
+  "year": 2018,
+  "doi": "10.1007/978-3-030-01216-8_22",
+  "authors": [
+   [
+    "Weixuan",
+    "Chen"
+   ],
+   [
+    "Daniel",
+    "McDuff"
+   ]
+  ]
+ },
+ {
+  "n": 5,
+  "type": "conference",
+  "venue": "Proceedings of the British Machine Vision Conference (BMVC)",
+  "venue_abbrev": "Proc. Br. Mach. Vis. Conf. (BMVC)",
+  "title": "Remote Photoplethysmograph Signal Measurement from Facial Videos Using Spatio-Temporal Networks",
+  "authors": [
+   [
+    "Z.",
+    "Yu"
+   ],
+   [
+    "X.",
+    "Li"
+   ],
+   [
+    "G.",
+    "Zhao"
+   ]
+  ],
+  "year": 2019,
+  "pages": "",
+  "article": "277"
+ },
+ {
+  "n": 6,
+  "type": "conference",
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "venue_abbrev": "Adv. Neural Inf. Process. Syst. (NeurIPS)",
+  "title": "Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement",
+  "authors": [
+   [
+    "X.",
+    "Liu"
+   ],
+   [
+    "J.",
+    "Fromm"
+   ],
+   [
+    "S.",
+    "Patel"
+   ],
+   [
+    "D.",
+    "McDuff"
+   ]
+  ],
+  "year": 2020,
+  "volume": "33",
+  "pages": "19400-19411"
+ },
+ {
+  "n": 7,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "PhysFormer: Facial Video-Based Physiological Measurement With Temporal Difference Transformer",
+  "volume": "",
+  "issue": "",
+  "pages": "4176-4186",
+  "article": "",
+  "year": 2022,
+  "doi": "10.1109/CVPR52688.2022.00415",
+  "authors": [
+   [
+    "Zitong",
+    "Yu"
+   ],
+   [
+    "Yuming",
+    "Shen"
+   ],
+   [
+    "Jingang",
+    "Shi"
+   ],
+   [
+    "Hengshuang",
+    "Zhao"
+   ],
+   [
+    "Philip",
+    "Torr"
+   ],
+   [
+    "Guoying",
+    "Zhao"
+   ]
+  ]
+ },
+ {
+  "n": 8,
+  "type": "journal",
+  "venue": "International Journal of Computer Vision",
+  "venue_abbrev": "Int. J. Comput. Vis.",
+  "title": "PhysFormer++: Facial Video-Based Physiological Measurement with SlowFast Temporal Difference Transformer",
+  "volume": "131",
+  "issue": "6",
+  "pages": "1307-1330",
+  "article": "",
+  "year": 2023,
+  "doi": "10.1007/s11263-023-01758-1",
+  "authors": [
+   [
+    "Zitong",
+    "Yu"
+   ],
+   [
+    "Yuming",
+    "Shen"
+   ],
+   [
+    "Jingang",
+    "Shi"
+   ],
+   [
+    "Hengshuang",
+    "Zhao"
+   ],
+   [
+    "Yawen",
+    "Cui"
+   ],
+   [
+    "Jiehua",
+    "Zhang"
+   ],
+   [
+    "Philip",
+    "Torr"
+   ],
+   [
+    "Guoying",
+    "Zhao"
+   ]
+  ]
+ },
+ {
+  "n": 9,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+  "venue_abbrev": "Proc. IEEE/CVF Winter Conf. Appl. Comput. Vis. (WACV)",
+  "title": "EfficientPhys: Enabling Simple, Fast and Accurate Camera-Based Cardiac Measurement",
+  "volume": "",
+  "issue": "",
+  "pages": "4997-5006",
+  "article": "",
+  "year": 2023,
+  "doi": "10.1109/WACV56688.2023.00498",
+  "authors": [
+   [
+    "Xin",
+    "Liu"
+   ],
+   [
+    "Brian",
+    "Hill"
+   ],
+   [
+    "Ziheng",
+    "Jiang"
+   ],
+   [
+    "Shwetak",
+    "Patel"
+   ],
+   [
+    "Daniel",
+    "McDuff"
+   ]
+  ]
+ },
+ {
+  "n": 10,
+  "type": "conference",
+  "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+  "venue_abbrev": "Adv. Neural Inf. Process. Syst. (NeurIPS)",
+  "title": "rPPG-Toolbox: Deep Remote PPG Toolbox",
+  "volume": "",
+  "issue": "",
+  "pages": "68485-68510",
+  "article": "",
+  "year": 2023,
+  "doi": "10.52202/075280-2995",
+  "authors": [
+   [
+    "Xin",
+    "Liu"
+   ],
+   [
+    "Girish",
+    "Narayanswamy"
+   ],
+   [
+    "Akshay",
+    "Paruchuri"
+   ],
+   [
+    "Xiaoyu",
+    "Zhang"
+   ],
+   [
+    "Jiankai",
+    "Tang"
+   ],
+   [
+    "Yuzhe",
+    "Zhang"
+   ],
+   [
+    "Roni",
+    "Sengupta"
+   ],
+   [
+    "Shwetak",
+    "Patel"
+   ],
+   [
+    "Yuntao",
+    "Wang"
+   ],
+   [
+    "Daniel",
+    "McDuff"
+   ]
+  ]
+ },
+ {
+  "n": 11,
+  "type": "journal",
+  "venue": "JMIR Formative Research",
+  "venue_abbrev": "JMIR Form. Res.",
+  "title": "Dynamic Region of Interest Selection in Remote Photoplethysmography: Proof-of-Concept Study",
+  "volume": "7",
+  "issue": "",
+  "pages": "",
+  "article": "e44575",
+  "year": 2023,
+  "doi": "10.2196/44575",
+  "authors": [
+   [
+    "Adam",
+    "Kiddle"
+   ],
+   [
+    "Helen",
+    "Barham"
+   ],
+   [
+    "Simon",
+    "Wegerif"
+   ],
+   [
+    "Connie",
+    "Petronzio"
+   ]
+  ]
+ },
+ {
+  "n": 12,
+  "type": "journal",
+  "venue": "Sensors",
+  "venue_abbrev": "Sensors",
+  "title": "Assessment of ROI Selection for Facial Video-Based rPPG",
+  "volume": "21",
+  "issue": "23",
+  "pages": "",
+  "article": "7923",
+  "year": 2021,
+  "doi": "10.3390/s21237923",
+  "authors": [
+   [
+    "Dae-Yeol",
+    "Kim"
+   ],
+   [
+    "Kwangkee",
+    "Lee"
+   ],
+   [
+    "Chae-Bong",
+    "Sohn"
+   ]
+  ]
+ },
+ {
+  "n": 13,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+  "venue_abbrev": "Proc. IEEE/CVF Winter Conf. Appl. Comput. Vis. (WACV)",
+  "title": "Motion Matters: Neural Motion Transfer for Better Camera Physiological Measurement",
+  "volume": "",
+  "issue": "",
+  "pages": "5921-5930",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1109/WACV57701.2024.00583",
+  "authors": [
+   [
+    "Akshay",
+    "Paruchuri"
+   ],
+   [
+    "Xin",
+    "Liu"
+   ],
+   [
+    "Yulu",
+    "Pan"
+   ],
+   [
+    "Shwetak",
+    "Patel"
+   ],
+   [
+    "Daniel",
+    "McDuff"
+   ],
+   [
+    "Soumyadip",
+    "Sengupta"
+   ]
+  ]
+ },
+ {
+  "n": 14,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "venue_abbrev": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. Workshops (CVPRW)",
+  "title": "Toward Motion Robustness: A Masked Attention Regularization Framework in Remote Photoplethysmography",
+  "volume": "",
+  "issue": "",
+  "pages": "7829-7838",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1109/CVPRW63382.2024.00779",
+  "authors": [
+   [
+    "Pengfei",
+    "Zhao"
+   ],
+   [
+    "Qigong",
+    "Sun"
+   ],
+   [
+    "Xiaolin",
+    "Tian"
+   ],
+   [
+    "Yige",
+    "Yang"
+   ],
+   [
+    "Shuo",
+    "Tao"
+   ],
+   [
+    "Jie",
+    "Cheng"
+   ],
+   [
+    "Jiantong",
+    "Chen"
+   ]
+  ]
+ },
+ {
+  "n": 15,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "Dual-Bridging With Adversarial Noise Generation for Domain Adaptive rPPG Estimation",
+  "volume": "",
+  "issue": "",
+  "pages": "10355-10364",
+  "article": "",
+  "year": 2023,
+  "doi": "10.1109/CVPR52729.2023.00998",
+  "authors": [
+   [
+    "Jingda",
+    "Du"
+   ],
+   [
+    "Si-Qi",
+    "Liu"
+   ],
+   [
+    "Bochao",
+    "Zhang"
+   ],
+   [
+    "Pong C.",
+    "Yuen"
+   ]
+  ]
+ },
+ {
+  "n": 16,
+  "type": "conference",
+  "venue": "Proceedings of the 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)",
+  "venue_abbrev": "Proc. IEEE Eng. Med. Biol. Soc. Conf. (EMBC)",
+  "title": "MMPD: Multi-Domain Mobile Video Physiology Dataset",
+  "volume": "",
+  "issue": "",
+  "pages": "1-5",
+  "article": "",
+  "year": 2023,
+  "doi": "10.1109/EMBC40787.2023.10340857",
+  "authors": [
+   [
+    "Jiankai",
+    "Tang"
+   ],
+   [
+    "Kequan",
+    "Chen"
+   ],
+   [
+    "Yuntao",
+    "Wang"
+   ],
+   [
+    "Yuanchun",
+    "Shi"
+   ],
+   [
+    "Shwetak",
+    "Patel"
+   ],
+   [
+    "Daniel",
+    "McDuff"
+   ],
+   [
+    "Xin",
+    "Liu"
+   ]
+  ]
+ },
+ {
+  "n": 17,
+  "type": "journal",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "venue_abbrev": "Proc. AAAI Conf. Artif. Intell.",
+  "title": "PhysDiff: Physiology-based Dynamicity Disentangled Diffusion Model for Remote Physiological Measurement",
+  "volume": "39",
+  "issue": "6",
+  "pages": "6568-6576",
+  "article": "",
+  "year": 2025,
+  "doi": "10.1609/aaai.v39i6.32704",
+  "authors": [
+   [
+    "Wei",
+    "Qian"
+   ],
+   [
+    "Gaoji",
+    "Su"
+   ],
+   [
+    "Dan",
+    "Guo"
+   ],
+   [
+    "Jinxing",
+    "Zhou"
+   ],
+   [
+    "Xiaobai",
+    "Li"
+   ],
+   [
+    "Bin",
+    "Hu"
+   ],
+   [
+    "Shengeng",
+    "Tang"
+   ],
+   [
+    "Meng",
+    "Wang"
+   ]
+  ]
+ },
+ {
+  "n": 18,
+  "type": "journal",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "venue_abbrev": "Proc. AAAI Conf. Artif. Intell.",
+  "title": "RhythmMamba: Fast, Lightweight, and Accurate Remote Physiological Measurement",
+  "volume": "39",
+  "issue": "10",
+  "pages": "11077-11085",
+  "article": "",
+  "year": 2025,
+  "doi": "10.1609/aaai.v39i10.33204",
+  "authors": [
+   [
+    "Bochao",
+    "Zou"
+   ],
+   [
+    "Zizheng",
+    "Guo"
+   ],
+   [
+    "Xiaocheng",
+    "Hu"
+   ],
+   [
+    "Huimin",
+    "Ma"
+   ]
+  ]
+ },
+ {
+  "n": 19,
+  "type": "journal",
+  "venue": "npj Digital Medicine",
+  "venue_abbrev": "npj Digit. Med.",
+  "title": "Non-contact physiological monitoring of preterm infants in the Neonatal Intensive Care Unit",
+  "volume": "2",
+  "issue": "1",
+  "pages": "",
+  "article": "128",
+  "year": 2019,
+  "doi": "10.1038/s41746-019-0199-5",
+  "authors": [
+   [
+    "Mauricio",
+    "Villarroel"
+   ],
+   [
+    "Sitthichok",
+    "Chaichulee"
+   ],
+   [
+    "João",
+    "Jorge"
+   ],
+   [
+    "Sara",
+    "Davis"
+   ],
+   [
+    "Gabrielle",
+    "Green"
+   ],
+   [
+    "Carlos",
+    "Arteta"
+   ],
+   [
+    "Andrew",
+    "Zisserman"
+   ],
+   [
+    "Kenny",
+    "McCormick"
+   ],
+   [
+    "Peter",
+    "Watkinson"
+   ],
+   [
+    "Lionel",
+    "Tarassenko"
+   ]
+  ]
+ },
+ {
+  "n": 20,
+  "type": "journal",
+  "venue": "Journal of Imaging",
+  "venue_abbrev": "J. Imaging",
+  "title": "Non-Contact Automatic Vital Signs Monitoring of Infants in a Neonatal Intensive Care Unit Based on Neural Networks",
+  "volume": "7",
+  "issue": "8",
+  "pages": "",
+  "article": "122",
+  "year": 2021,
+  "doi": "10.3390/jimaging7080122",
+  "authors": [
+   [
+    "Fatema-Tuz-Zohra",
+    "Khanam"
+   ],
+   [
+    "Asanka G.",
+    "Perera"
+   ],
+   [
+    "Ali",
+    "Al-Naji"
+   ],
+   [
+    "Kim",
+    "Gibson"
+   ],
+   [
+    "Javaan",
+    "Chahl"
+   ]
+  ]
+ },
+ {
+  "n": 21,
+  "type": "journal",
+  "venue": "IEEE Transactions on Instrumentation and Measurement",
+  "venue_abbrev": "IEEE Trans. Instrum. Meas.",
+  "title": "Camera-Based Cardiorespiratory Monitoring of Preterm Infants in NICU",
+  "volume": "73",
+  "issue": "",
+  "pages": "1-13",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1109/TIM.2024.3395314",
+  "authors": [
+   [
+    "Yongshen",
+    "Zeng"
+   ],
+   [
+    "Dongfang",
+    "Yu"
+   ],
+   [
+    "Xiaoyan",
+    "Song"
+   ],
+   [
+    "Qiqiong",
+    "Wang"
+   ],
+   [
+    "Liping",
+    "Pan"
+   ],
+   [
+    "Hongzhou",
+    "Lu"
+   ],
+   [
+    "Wenjin",
+    "Wang"
+   ]
+  ]
+ },
+ {
+  "n": 22,
+  "type": "journal",
+  "venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+  "venue_abbrev": "IEEE J. Transl. Eng. Health Med.",
+  "title": "Video-Based Respiratory Rate Estimation for Infants in the NICU",
+  "volume": "12",
+  "issue": "",
+  "pages": "684-696",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1109/JTEHM.2024.3488523",
+  "authors": [
+   [
+    "Soodeh",
+    "Ahani"
+   ],
+   [
+    "Nikoo",
+    "Niknafs"
+   ],
+   [
+    "Pascal M.",
+    "Lavoie"
+   ],
+   [
+    "Liisa",
+    "Holsti"
+   ],
+   [
+    "Guy A.",
+    "Dumont"
+   ]
+  ]
+ },
+ {
+  "n": 23,
+  "type": "journal",
+  "venue": "Scientific Reports",
+  "venue_abbrev": "Sci. Rep.",
+  "title": "Continuous non-contact vital sign monitoring of neonates in intensive care units using RGB-D cameras",
+  "volume": "15",
+  "issue": "1",
+  "pages": "",
+  "article": "16863",
+  "year": 2025,
+  "doi": "10.1038/s41598-025-00539-9",
+  "authors": [
+   [
+    "Silas",
+    "Ruhrberg Estévez"
+   ],
+   [
+    "Alex",
+    "Grafton"
+   ],
+   [
+    "Lynn",
+    "Thomson"
+   ],
+   [
+    "Joana",
+    "Warnecke"
+   ],
+   [
+    "Kathryn",
+    "Beardsall"
+   ],
+   [
+    "Joan",
+    "Lasenby"
+   ]
+  ]
+ },
+ {
+  "n": 24,
+  "type": "journal",
+  "venue": "Data in Brief",
+  "venue_abbrev": "Data Brief",
+  "title": "The babyPose dataset",
+  "volume": "33",
+  "issue": "",
+  "pages": "",
+  "article": "106329",
+  "year": 2020,
+  "doi": "10.1016/j.dib.2020.106329",
+  "authors": [
+   [
+    "Lucia",
+    "Migliorelli"
+   ],
+   [
+    "Sara",
+    "Moccia"
+   ],
+   [
+    "Rocco",
+    "Pietrini"
+   ],
+   [
+    "Virgilio Paolo",
+    "Carnielli"
+   ],
+   [
+    "Emanuele",
+    "Frontoni"
+   ]
+  ]
+ },
+ {
+  "n": 25,
+  "type": "conference",
+  "venue": "Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI)",
+  "venue_abbrev": "Proc. Int. Jt. Conf. Artif. Intell. (IJCAI)",
+  "title": "AggPose: Deep Aggregation Vision Transformer for Infant Pose Estimation",
+  "volume": "",
+  "issue": "",
+  "pages": "5045-5051",
+  "article": "",
+  "year": 2022,
+  "doi": "10.24963/ijcai.2022/700",
+  "authors": [
+   [
+    "Xu",
+    "Cao"
+   ],
+   [
+    "Xiaoye",
+    "Li"
+   ],
+   [
+    "Liya",
+    "Ma"
+   ],
+   [
+    "Yi",
+    "Huang"
+   ],
+   [
+    "Xuan",
+    "Feng"
+   ],
+   [
+    "Zening",
+    "Chen"
+   ],
+   [
+    "Hongwu",
+    "Zeng"
+   ],
+   [
+    "Jianguo",
+    "Cao"
+   ]
+  ]
+ },
+ {
+  "n": 26,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+  "venue_abbrev": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. Workshops (CVPRW)",
+  "title": "Leveraging Synthetic Adult Datasets for Unsupervised Infant Pose Estimation",
+  "volume": "",
+  "issue": "",
+  "pages": "5562-5571",
+  "article": "",
+  "year": 2025,
+  "doi": "10.1109/CVPRW67362.2025.00553",
+  "authors": [
+   [
+    "Sarosij",
+    "Bose"
+   ],
+   [
+    "Hannah",
+    "Dela Cruz"
+   ],
+   [
+    "Arindam",
+    "Dutta"
+   ],
+   [
+    "Elena",
+    "Kokkoni"
+   ],
+   [
+    "Konstantinos",
+    "Karydis"
+   ],
+   [
+    "Amit K.",
+    "Roy-Chowdhury"
+   ]
+  ]
+ },
+ {
+  "n": 27,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "You Only Look Once: Unified, Real-Time Object Detection",
+  "volume": "",
+  "issue": "",
+  "pages": "779-788",
+  "article": "",
+  "year": 2016,
+  "doi": "10.1109/CVPR.2016.91",
+  "authors": [
+   [
+    "Joseph",
+    "Redmon"
+   ],
+   [
+    "Santosh",
+    "Divvala"
+   ],
+   [
+    "Ross",
+    "Girshick"
+   ],
+   [
+    "Ali",
+    "Farhadi"
+   ]
+  ]
+ },
+ {
+  "n": 28,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "DETRs Beat YOLOs on Real-time Object Detection",
+  "volume": "",
+  "issue": "",
+  "pages": "16965-16974",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1109/CVPR52733.2024.01605",
+  "authors": [
+   [
+    "Yian",
+    "Zhao"
+   ],
+   [
+    "Wenyu",
+    "Lv"
+   ],
+   [
+    "Shangliang",
+    "Xu"
+   ],
+   [
+    "Jinman",
+    "Wei"
+   ],
+   [
+    "Guanzhong",
+    "Wang"
+   ],
+   [
+    "Qingqing",
+    "Dang"
+   ],
+   [
+    "Yi",
+    "Liu"
+   ],
+   [
+    "Jie",
+    "Chen"
+   ]
+  ]
+ },
+ {
+  "n": 29,
+  "type": "conference",
+  "venue": "Proceedings of the European Conference on Computer Vision (ECCV)",
+  "venue_abbrev": "Proc. Eur. Conf. Comput. Vis. (ECCV)",
+  "title": "ByteTrack: Multi-Object Tracking by Associating Every Detection Box",
+  "volume": "",
+  "issue": "",
+  "pages": "1-21",
+  "article": "",
+  "year": 2022,
+  "doi": "10.1007/978-3-031-20047-2_1",
+  "authors": [
+   [
+    "Yifu",
+    "Zhang"
+   ],
+   [
+    "Peize",
+    "Sun"
+   ],
+   [
+    "Yi",
+    "Jiang"
+   ],
+   [
+    "Dongdong",
+    "Yu"
+   ],
+   [
+    "Fucheng",
+    "Weng"
+   ],
+   [
+    "Zehuan",
+    "Yuan"
+   ],
+   [
+    "Ping",
+    "Luo"
+   ],
+   [
+    "Wenyu",
+    "Liu"
+   ],
+   [
+    "Xinggang",
+    "Wang"
+   ]
+  ]
+ },
+ {
+  "n": 30,
+  "type": "arxiv",
+  "venue": "arXiv preprint arXiv:2206.14651",
+  "venue_abbrev": "arXiv:2206.14651",
+  "title": "BoT-SORT: Robust Associations Multi-Pedestrian Tracking",
+  "authors": [
+   [
+    "N.",
+    "Aharon"
+   ],
+   [
+    "R.",
+    "Orfaig"
+   ],
+   [
+    "B.-Z.",
+    "Bobrovsky"
+   ]
+  ],
+  "year": 2022
+ },
+ {
+  "n": 31,
+  "type": "conference",
+  "venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+  "venue_abbrev": "Proc. Int. Conf. Learn. Represent. (ICLR)",
+  "title": "SAM 2: Segment Anything in Images and Videos",
+  "authors": [
+   [
+    "N.",
+    "Ravi"
+   ],
+   [
+    "V.",
+    "Gabeur"
+   ],
+   [
+    "Y.-T.",
+    "Hu"
+   ],
+   [
+    "R.",
+    "Hu"
+   ],
+   [
+    "C.",
+    "Ryali"
+   ],
+   [
+    "T.",
+    "Ma"
+   ],
+   [
+    "H.",
+    "Khedr"
+   ],
+   [
+    "R.",
+    "Rädle"
+   ],
+   [
+    "C.",
+    "Rolland"
+   ],
+   [
+    "L.",
+    "Gustafson"
+   ],
+   [
+    "E.",
+    "Mintun"
+   ],
+   [
+    "J.",
+    "Pan"
+   ],
+   [
+    "K. V.",
+    "Alwala"
+   ],
+   [
+    "N.",
+    "Carion"
+   ],
+   [
+    "C.-Y.",
+    "Wu"
+   ],
+   [
+    "R.",
+    "Girshick"
+   ],
+   [
+    "P.",
+    "Dollár"
+   ],
+   [
+    "C.",
+    "Feichtenhofer"
+   ]
+  ],
+  "year": 2025
+ },
+ {
+  "n": 32,
+  "type": "conference",
+  "venue": "Proceedings of the European Conference on Computer Vision (ECCV)",
+  "venue_abbrev": "Proc. Eur. Conf. Comput. Vis. (ECCV)",
+  "title": "Sapiens: Foundation for Human Vision Models",
+  "volume": "",
+  "issue": "",
+  "pages": "206-228",
+  "article": "",
+  "year": 2024,
+  "doi": "10.1007/978-3-031-73235-5_12",
+  "authors": [
+   [
+    "R.",
+    "Khirodkar"
+   ],
+   [
+    "T.",
+    "Bagautdinov"
+   ],
+   [
+    "J.",
+    "Martinez"
+   ],
+   [
+    "Z.",
+    "Su"
+   ],
+   [
+    "A. T.",
+    "James"
+   ],
+   [
+    "P.",
+    "Selednik"
+   ],
+   [
+    "S.",
+    "Anderson"
+   ],
+   [
+    "S.",
+    "Saito"
+   ]
+  ]
+ },
+ {
+  "n": 33,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "venue_abbrev": "Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)",
+  "title": "Segment Anything",
+  "volume": "",
+  "issue": "",
+  "pages": "3992-4003",
+  "article": "",
+  "year": 2023,
+  "doi": "10.1109/ICCV51070.2023.00371",
+  "authors": [
+   [
+    "Alexander",
+    "Kirillov"
+   ],
+   [
+    "Eric",
+    "Mintun"
+   ],
+   [
+    "Nikhila",
+    "Ravi"
+   ],
+   [
+    "Hanzi",
+    "Mao"
+   ],
+   [
+    "Chloe",
+    "Rolland"
+   ],
+   [
+    "Laura",
+    "Gustafson"
+   ],
+   [
+    "Tete",
+    "Xiao"
+   ],
+   [
+    "Spencer",
+    "Whitehead"
+   ],
+   [
+    "Alexander C.",
+    "Berg"
+   ],
+   [
+    "Wan-Yen",
+    "Lo"
+   ],
+   [
+    "Piotr",
+    "Dollár"
+   ],
+   [
+    "Ross",
+    "Girshick"
+   ]
+  ]
+ },
+ {
+  "n": 34,
+  "type": "journal",
+  "venue": "Journal of Machine Learning Research",
+  "venue_abbrev": "J. Mach. Learn. Res.",
+  "title": "Domain-Adversarial Training of Neural Networks",
+  "authors": [
+   [
+    "Y.",
+    "Ganin"
+   ],
+   [
+    "E.",
+    "Ustinova"
+   ],
+   [
+    "H.",
+    "Ajakan"
+   ],
+   [
+    "P.",
+    "Germain"
+   ],
+   [
+    "H.",
+    "Larochelle"
+   ],
+   [
+    "F.",
+    "Laviolette"
+   ],
+   [
+    "M.",
+    "March"
+   ],
+   [
+    "V.",
+    "Lempitsky"
+   ]
+  ],
+  "year": 2016,
+  "volume": "17",
+  "issue": "59",
+  "pages": "1-35"
+ },
+ {
+  "n": 35,
+  "type": "conference",
+  "venue": "Proceedings of the Scandinavian Conference on Image Analysis (SCIA), Lecture Notes in Computer Science 2749",
+  "venue_abbrev": "Proc. Scand. Conf. Image Anal. (SCIA), LNCS 2749",
+  "title": "Two-Frame Motion Estimation Based on Polynomial Expansion",
+  "volume": "",
+  "issue": "",
+  "pages": "363-370",
+  "article": "",
+  "year": 2003,
+  "doi": "10.1007/3-540-45103-x_50",
+  "authors": [
+   [
+    "Gunnar",
+    "Farnebäck"
+   ]
+  ]
+ },
+ {
+  "n": 36,
+  "type": "chapter",
+  "venue": "Advances in Large Margin Classifiers",
+  "venue_abbrev": "Advances in Large Margin Classifiers",
+  "title": "Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods",
+  "authors": [
+   [
+    "J.",
+    "Platt"
+   ]
+  ],
+  "year": 1999,
+  "pages": "61-74",
+  "publisher": "MIT Press, Cambridge, MA"
+ },
+ {
+  "n": 37,
+  "type": "conference",
+  "venue": "Proceedings of the 34th International Conference on Machine Learning (ICML)",
+  "venue_abbrev": "Proc. Int. Conf. Mach. Learn. (ICML)",
+  "title": "On Calibration of Modern Neural Networks",
+  "authors": [
+   [
+    "C.",
+    "Guo"
+   ],
+   [
+    "G.",
+    "Pleiss"
+   ],
+   [
+    "Y.",
+    "Sun"
+   ],
+   [
+    "K. Q.",
+    "Weinberger"
+   ]
+  ],
+  "year": 2017,
+  "pages": "1321-1330"
+ },
+ {
+  "n": 38,
+  "type": "journal",
+  "venue": "Proceedings of the IEEE",
+  "venue_abbrev": "Proc. IEEE",
+  "title": "The Viterbi algorithm",
+  "volume": "61",
+  "issue": "3",
+  "pages": "268-278",
+  "article": "",
+  "year": 1973,
+  "doi": "10.1109/PROC.1973.9030",
+  "authors": [
+   [
+    "G. D.",
+    "Forney"
+   ]
+  ]
+ },
+ {
+  "n": 39,
+  "type": "journal",
+  "venue": "Physica D: Nonlinear Phenomena",
+  "venue_abbrev": "Physica D",
+  "title": "Testing for nonlinearity in time series: the method of surrogate data",
+  "volume": "58",
+  "issue": "1-4",
+  "pages": "77-94",
+  "article": "",
+  "year": 1992,
+  "doi": "10.1016/0167-2789(92)90102-s",
+  "authors": [
+   [
+    "James",
+    "Theiler"
+   ],
+   [
+    "Stephen",
+    "Eubank"
+   ],
+   [
+    "André",
+    "Longtin"
+   ],
+   [
+    "Bryan",
+    "Galdrikian"
+   ],
+   [
+    "J. D.",
+    "Farmer"
+   ]
+  ]
+ },
+ {
+  "n": 40,
+  "type": "conference",
+  "venue": "Proceedings of the 7th International Joint Conference on Artificial Intelligence (IJCAI)",
+  "venue_abbrev": "Proc. Int. Jt. Conf. Artif. Intell. (IJCAI)",
+  "title": "An Iterative Image Registration Technique with an Application to Stereo Vision",
+  "authors": [
+   [
+    "B. D.",
+    "Lucas"
+   ],
+   [
+    "T.",
+    "Kanade"
+   ]
+  ],
+  "year": 1981,
+  "pages": "674-679"
+ },
+ {
+  "n": 41,
+  "type": "journal",
+  "venue": "Biometrics Bulletin",
+  "venue_abbrev": "Biom. Bull.",
+  "title": "Individual Comparisons by Ranking Methods",
+  "volume": "1",
+  "issue": "6",
+  "pages": "80-83",
+  "article": "",
+  "year": 1945,
+  "doi": "10.2307/3001968",
+  "authors": [
+   [
+    "Frank",
+    "Wilcoxon"
+   ]
+  ]
+ },
+ {
+  "n": 42,
+  "type": "journal",
+  "venue": "Scandinavian Journal of Statistics",
+  "venue_abbrev": "Scand. J. Stat.",
+  "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+  "authors": [
+   [
+    "S.",
+    "Holm"
+   ]
+  ],
+  "year": 1979,
+  "volume": "6",
+  "issue": "2",
+  "pages": "65-70"
+ },
+ {
+  "n": 43,
+  "type": "journal",
+  "venue": "Comprehensive Psychology",
+  "venue_abbrev": "Compr. Psychol.",
+  "title": "The Simple Difference Formula: An Approach to Teaching Nonparametric Correlation",
+  "volume": "3",
+  "issue": "",
+  "pages": "",
+  "article": "11.IT.3.1",
+  "year": 2014,
+  "doi": "10.2466/11.it.3.1",
+  "authors": [
+   [
+    "Dave S.",
+    "Kerby"
+   ]
+  ]
+ },
+ {
+  "n": 44,
+  "type": "book",
+  "venue": "",
+  "venue_abbrev": "",
+  "title": "An Introduction to the Bootstrap",
+  "authors": [
+   [
+    "B.",
+    "Efron"
+   ],
+   [
+    "R. J.",
+    "Tibshirani"
+   ]
+  ],
+  "year": 1993,
+  "publisher": "Chapman & Hall, New York"
+ },
+ {
+  "n": 45,
+  "type": "software",
+  "venue": "",
+  "venue_abbrev": "",
+  "title": "Ultralytics YOLO11",
+  "authors": [
+   [
+    "G.",
+    "Jocher"
+   ],
+   [
+    "J.",
+    "Qiu"
+   ]
+  ],
+  "year": 2024,
+  "note": "version 11.0.0, software",
+  "url": "https://github.com/ultralytics/ultralytics"
+ },
+ {
+  "n": 46,
+  "type": "conference",
+  "venue": "Proceedings of the International Conference on Learning Representations (ICLR)",
+  "venue_abbrev": "Proc. Int. Conf. Learn. Represent. (ICLR)",
+  "title": "Sapiens2",
+  "authors": [
+   [
+    "R.",
+    "Khirodkar"
+   ],
+   [
+    "H.",
+    "Wen"
+   ],
+   [
+    "J.",
+    "Martinez"
+   ],
+   [
+    "Y.",
+    "Dong"
+   ],
+   [
+    "Z.",
+    "Su"
+   ],
+   [
+    "S.",
+    "Saito"
+   ]
+  ],
+  "year": 2026,
+  "note": "arXiv:2604.21681"
+ },
+ {
+  "n": 47,
+  "type": "journal",
+  "venue": "Pattern Recognition Letters",
+  "venue_abbrev": "Pattern Recognit. Lett.",
+  "title": "Unsupervised skin tissue segmentation for remote photoplethysmography",
+  "volume": "124",
+  "issue": "",
+  "pages": "82-90",
+  "article": "",
+  "year": 2019,
+  "doi": "10.1016/j.patrec.2017.10.017",
+  "authors": [
+   [
+    "Serge",
+    "Bobbia"
+   ],
+   [
+    "Richard",
+    "Macwan"
+   ],
+   [
+    "Yannick",
+    "Benezeth"
+   ],
+   [
+    "Alamin",
+    "Mansouri"
+   ],
+   [
+    "Julien",
+    "Dubois"
+   ]
+  ]
+ },
+ {
+  "n": 48,
+  "type": "conference",
+  "venue": "Proceedings of the 23rd IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)",
+  "venue_abbrev": "Proc. IEEE Int. Symp. Robot Hum. Interact. Commun. (RO-MAN)",
+  "title": "Non-contact video-based pulse rate measurement on a mobile service robot",
+  "volume": "",
+  "issue": "",
+  "pages": "1056-1062",
+  "article": "",
+  "year": 2014,
+  "doi": "10.1109/ROMAN.2014.6926392",
+  "authors": [
+   [
+    "Ronny",
+    "Stricker"
+   ],
+   [
+    "Steffen",
+    "Müller"
+   ],
+   [
+    "Horst-Michael",
+    "Gross"
+   ]
+  ]
+ },
+ {
+  "n": 49,
+  "type": "journal",
+  "venue": "The Annals of Statistics",
+  "venue_abbrev": "Ann. Stat.",
+  "title": "The jackknife and the bootstrap for general stationary observations",
+  "volume": "17",
+  "issue": "3",
+  "pages": "1217-1241",
+  "article": "",
+  "year": 1989,
+  "doi": "10.1214/aos/1176347265",
+  "authors": [
+   [
+    "Hans R.",
+    "Künsch"
+   ]
+  ]
+ },
+ {
+  "n": 50,
+  "type": "journal",
+  "venue": "Optics Express",
+  "venue_abbrev": "Opt. Express",
+  "title": "Non-contact, automated cardiac pulse measurements using video imaging and blind source separation",
+  "volume": "18",
+  "issue": "10",
+  "pages": "10762-10774",
+  "article": "",
+  "year": 2010,
+  "doi": "10.1364/oe.18.010762",
+  "authors": [
+   [
+    "Ming-Zher",
+    "Poh"
+   ],
+   [
+    "Daniel J.",
+    "McDuff"
+   ],
+   [
+    "Rosalind W.",
+    "Picard"
+   ]
+  ]
+ },
+ {
+  "n": 51,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "Remote heart rate measurement from face videos under realistic situations",
+  "volume": "",
+  "issue": "",
+  "pages": "4264-4271",
+  "article": "",
+  "year": 2014,
+  "doi": "10.1109/CVPR.2014.543",
+  "authors": [
+   [
+    "Xiaobai",
+    "Li"
+   ],
+   [
+    "Jie",
+    "Chen"
+   ],
+   [
+    "Guoying",
+    "Zhao"
+   ],
+   [
+    "Matti",
+    "Pietikainen"
+   ]
+  ]
+ },
+ {
+  "n": 52,
+  "type": "journal",
+  "venue": "Biomedical Optics Express",
+  "venue_abbrev": "Biomed. Opt. Express",
+  "title": "DistancePPG: Robust non-contact vital signs monitoring using a camera",
+  "volume": "6",
+  "issue": "5",
+  "pages": "1565-1588",
+  "article": "",
+  "year": 2015,
+  "doi": "10.1364/boe.6.001565",
+  "authors": [
+   [
+    "Mayank",
+    "Kumar"
+   ],
+   [
+    "Ashok",
+    "Veeraraghavan"
+   ],
+   [
+    "Ashutosh",
+    "Sabharwal"
+   ]
+  ]
+ },
+ {
+  "n": 53,
+  "type": "journal",
+  "venue": "IEEE Transactions on Biomedical Engineering",
+  "venue_abbrev": "IEEE Trans. Biomed. Eng.",
+  "title": "Exploiting spatial redundancy of image sensor for motion robust rPPG",
+  "volume": "62",
+  "issue": "2",
+  "pages": "415-425",
+  "article": "",
+  "year": 2015,
+  "doi": "10.1109/TBME.2014.2356291",
+  "authors": [
+   [
+    "Wenjin",
+    "Wang"
+   ],
+   [
+    "Sander",
+    "Stuijk"
+   ],
+   [
+    "Gerard",
+    "de Haan"
+   ]
+  ]
+ },
+ {
+  "n": 54,
+  "type": "conference",
+  "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "venue_abbrev": "Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)",
+  "title": "Self-adaptive matrix completion for heart rate estimation from face videos under realistic conditions",
+  "volume": "",
+  "issue": "",
+  "pages": "2396-2404",
+  "article": "",
+  "year": 2016,
+  "doi": "10.1109/CVPR.2016.263",
+  "authors": [
+   [
+    "Sergey",
+    "Tulyakov"
+   ],
+   [
+    "Xavier",
+    "Alameda-Pineda"
+   ],
+   [
+    "Elisa",
+    "Ricci"
+   ],
+   [
+    "Lijun",
+    "Yin"
+   ],
+   [
+    "Jeffrey F.",
+    "Cohn"
+   ],
+   [
+    "Nicu",
+    "Sebe"
+   ]
+  ]
+ },
+ {
+  "n": 55,
+  "type": "journal",
+  "venue": "Early Human Development",
+  "venue_abbrev": "Early Hum. Dev.",
+  "title": "Non-contact heart rate monitoring utilizing camera photoplethysmography in the neonatal intensive care unit - A pilot study",
+  "volume": "89",
+  "issue": "12",
+  "pages": "943-948",
+  "article": "",
+  "year": 2013,
+  "doi": "10.1016/j.earlhumdev.2013.09.016",
+  "authors": [
+   [
+    "Lonneke A.M.",
+    "Aarts"
+   ],
+   [
+    "Vincent",
+    "Jeanne"
+   ],
+   [
+    "John P.",
+    "Cleary"
+   ],
+   [
+    "C.",
+    "Lieber"
+   ],
+   [
+    "J. Stuart",
+    "Nelson"
+   ],
+   [
+    "Sidarto",
+    "Bambang Oetomo"
+   ],
+   [
+    "Wim",
+    "Verkruysse"
+   ]
+  ]
+ },
+ {
+  "n": 56,
+  "type": "conference",
+  "venue": "Proceedings of the 12th IEEE International Conference on Automatic Face & Gesture Recognition (FG)",
+  "venue_abbrev": "Proc. IEEE Int. Conf. Autom. Face Gesture Recognit. (FG)",
+  "title": "Multi-task convolutional neural network for patient detection and skin segmentation in continuous non-contact vital sign monitoring",
+  "volume": "",
+  "issue": "",
+  "pages": "266-272",
+  "article": "",
+  "year": 2017,
+  "doi": "10.1109/FG.2017.41",
+  "authors": [
+   [
+    "Sitthichok",
+    "Chaichulee"
+   ],
+   [
+    "Mauricio",
+    "Villarroel"
+   ],
+   [
+    "Joao",
+    "Jorge"
+   ],
+   [
+    "Carlos",
+    "Arteta"
+   ],
+   [
+    "Gabrielle",
+    "Green"
+   ],
+   [
+    "Kenny",
+    "McCormick"
+   ],
+   [
+    "Andrew",
+    "Zisserman"
+   ],
+   [
+    "Lionel",
+    "Tarassenko"
+   ]
+  ]
+ },
+ {
+  "n": 57,
+  "type": "journal",
+  "venue": "Physiological Measurement",
+  "venue_abbrev": "Physiol. Meas.",
+  "title": "Cardio-respiratory signal extraction from video camera data for continuous non-contact vital sign monitoring using deep learning",
+  "volume": "40",
+  "issue": "11",
+  "pages": "",
+  "article": "115001",
+  "year": 2019,
+  "doi": "10.1088/1361-6579/ab525c",
+  "authors": [
+   [
+    "Sitthichok",
+    "Chaichulee"
+   ],
+   [
+    "Mauricio",
+    "Villarroel"
+   ],
+   [
+    "João",
+    "Jorge"
+   ],
+   [
+    "Carlos",
+    "Arteta"
+   ],
+   [
+    "Kenny",
+    "McCormick"
+   ],
+   [
+    "Andrew",
+    "Zisserman"
+   ],
+   [
+    "Lionel",
+    "Tarassenko"
+   ]
+  ]
+ },
+ {
+  "n": 58,
+  "type": "journal",
+  "venue": "Medical & Biological Engineering & Computing",
+  "venue_abbrev": "Med. Biol. Eng. Comput.",
+  "title": "Fast body part segmentation and tracking of neonatal video data using deep learning",
+  "volume": "58",
+  "issue": "12",
+  "pages": "3049-3061",
+  "article": "",
+  "year": 2020,
+  "doi": "10.1007/s11517-020-02251-4",
+  "authors": [
+   [
+    "Christoph",
+    "Hoog Antink"
+   ],
+   [
+    "Joana Carlos Mesquita",
+    "Ferreira"
+   ],
+   [
+    "Michael",
+    "Paul"
+   ],
+   [
+    "Simon",
+    "Lyra"
+   ],
+   [
+    "Konrad",
+    "Heimann"
+   ],
+   [
+    "Srinivasa",
+    "Karthik"
+   ],
+   [
+    "Jayaraj",
+    "Joseph"
+   ],
+   [
+    "Kumutha",
+    "Jayaraman"
+   ],
+   [
+    "Thorsten",
+    "Orlikowsky"
+   ],
+   [
+    "Mohanasankar",
+    "Sivaprakasam"
+   ],
+   [
+    "Steffen",
+    "Leonhardt"
+   ]
+  ]
+ },
+ {
+  "n": 59,
+  "type": "journal",
+  "venue": "Engineering Applications of Artificial Intelligence",
+  "venue_abbrev": "Eng. Appl. Artif. Intell.",
+  "title": "A neonatal dataset and benchmark for non-contact neonatal heart rate monitoring based on spatio-temporal neural networks",
+  "volume": "106",
+  "issue": "",
+  "pages": "",
+  "article": "104447",
+  "year": 2021,
+  "doi": "10.1016/j.engappai.2021.104447",
+  "authors": [
+   [
+    "Bin",
+    "Huang"
+   ],
+   [
+    "Weihai",
+    "Chen"
+   ],
+   [
+    "Chun-Liang",
+    "Lin"
+   ],
+   [
+    "Chia-Feng",
+    "Juang"
+   ],
+   [
+    "Yuanping",
+    "Xing"
+   ],
+   [
+    "Yanting",
+    "Wang"
+   ],
+   [
+    "Jianhua",
+    "Wang"
+   ]
+  ]
+ }
+]

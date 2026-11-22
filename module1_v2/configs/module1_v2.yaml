@@ -1,0 +1,59 @@
+# Module 1 v2 — every new behaviour is behind a flag. With the values in `v1_equivalent` the v2 code path
+# reproduces the v1 "Full" configuration exactly (tested in module1_v2/tests/test_regression_v1.py).
+# Parameters marked TUNED are chosen on TRAINING videos only by scripts/tune_phase1.py (objective in
+# src/module1_v2/tuning.py); the chosen values and the training video IDs are written to tuning_log.json.
+
+v1_equivalent:
+  ema_beta: 0.0            # no smoothing
+  selection: topk          # per-frame top-k, no temporal state
+  hysteresis_delta: 0.0
+  hysteresis_frames: 1
+  viterbi_penalty: 0.0
+  viterbi_lag: null
+  alpha_ema: 0.0
+  crossfade_sec: 0.0
+  visibility: v1           # V = 1 - occlusion_proxy (= skin likelihood)
+  motion: total            # M = total Farneback flow in the ROI
+  subject_verify: false
+  box_roi_pixels: skip     # v1: 2-point (BBOX) ROI geometry carries no pixels; v2: 'rectangle'
+
+phase1:
+  top_k: 3                 # unchanged from v1
+  temperature: 1.0         # unchanged from v1
+  # 1a temporal stabilization
+  ema_beta_grid: [0.8, 0.85, 0.9, 0.95]            # TUNED
+  hysteresis_delta_grid: [0.0, 0.01, 0.02, 0.05]   # TUNED (Q rescaled to [0, 1])
+  hysteresis_frames_grid: [1, 2, 4, 8]             # TUNED
+  viterbi_penalty_grid: [0.01, 0.02, 0.05, 0.1, 0.2]  # TUNED (Q units per switch)
+  viterbi_lag_sec: 1.0     # online fixed-lag variant (D3-lag); offline variant uses the whole video
+  quality_retention: 0.98  # design constant of the tuning objective (not tuned)
+  alpha_ema: 0.5           # design constant: fusion-weight smoothing per sampled frame
+  crossfade_sec: 1.0       # design constant: max weight change per frame = 1 / (crossfade_sec * fps)
+  # 1b independent visibility
+  visibility: keypoint     # V' = fraction of the region's template keypoints with confidence >= 0.5
+  keypoint_confidence: 0.5
+  # 1c motion decomposition
+  motion: residual_nuisance
+  global_motion: median    # median | homography (RANSAC on background flow)
+  background_dilation_px: 15
+  motion_scale_pixels: 20.0      # same scale as v1 (roi_quality.motion_scale_pixels)
+  respiratory_band_hz: [0.5, 1.5]
+  periodicity_window_sec: 8.0    # trailing (causal) window
+  respiratory_rois: [THORACO_ABDOMINAL, UPPER_CHEST, LOWER_CHEST, ABDOMEN]
+  # 1d subject verification (anthropometric priors; not fitted - no infant/adult labels exist)
+  subject_verify: true
+  head_shoulder_ratio_min: 0.55   # ear-to-ear / shoulder width: newborn ~0.7, adult ~0.4 (approximate anthropometry)
+  arm_torso_ratio_max: 1.0        # (shoulder-elbow-wrist) / (shoulder-hip midline): newborn ~0.8, adult ~1.15
+  subject_window_sec: 2.0         # trailing median of the per-frame decision
+
+# ---------------------------------------------------------------- Phase 2 (baselines + label-free validity tests)
+phase2:
+  top_k: 3                 # M1 / M2 keep the 3 best units of the previous window (same k as the ROI methods)
+  grid_rows: 4             # M2 tiles over the infant box
+  grid_cols: 4
+  surrogates_phase: 49     # primary null: per-channel phase randomization
+  surrogates_shuffle: 199  # block shuffling (primary null in the manuscript); 199 since the 2026-11 revision (was 19)
+  shuffle_block_sec: 0.25
+  null_percentile: 95.0    # window is "pulse-present" when SNR > this percentile of the pooled null
+  agreement_bpm: 6.0       # split-half heart rates must agree within this
+  seed: 42

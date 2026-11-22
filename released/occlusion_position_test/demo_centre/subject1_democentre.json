@@ -1,0 +1,91 @@
+{
+  "source": "data/ubfc/subject1/vid.avi",
+  "purpose": "demonstration, not pre-registered",
+  "palm_width_face": 0.6,
+  "position_rule": [
+    0.1,
+    0.15,
+    90
+  ],
+  "face_box": {
+    "x": 286.0,
+    "y": 184.0,
+    "w": 146.0,
+    "h": 146.0,
+    "method": "haar_frontalface",
+    "detections": 10
+  },
+  "regions": {
+    "forehead": [
+      315.2,
+      191.3,
+      402.8,
+      227.8
+    ],
+    "centre": [
+      334.18,
+      235.1,
+      383.82,
+      286.2
+    ],
+    "left_cheek": [
+      297.68,
+      239.48000000000002,
+      334.18,
+      293.5
+    ],
+    "right_cheek": [
+      383.82,
+      239.48000000000002,
+      420.32,
+      293.5
+    ],
+    "lower_face": [
+      322.5,
+      289.12,
+      395.5,
+      330.0
+    ],
+    "face_box": [
+      286.0,
+      184.0,
+      432.0,
+      330.0
+    ],
+    "fixed_box_est": [
+      232.43305587768555,
+      203.49311065673828,
+      454.093936920166,
+      385.72731781005865
+    ]
+  },
+  "episodes_sec": [
+    [
+      10.0,
+      20.662
+    ],
+    [
+      25.378,
+      35.958
+    ],
+    [
+      42.274,
+      52.829
+    ]
+  ],
+  "hand_present_pct": 60.1,
+  "coverage_while_present": {
+    "forehead": 0.001,
+    "centre": 0.946,
+    "left_cheek": 0.827,
+    "right_cheek": 0.904,
+    "lower_face": 0.839,
+    "face_box": 0.535,
+    "fixed_box_est": 0.342
+  },
+  "frames": 1547,
+  "lossless_bit_exact": true,
+  "narrowband_flags": [],
+  "original_unchanged": true,
+  "checks_passed": true
+}

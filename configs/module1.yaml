@@ -1,0 +1,207 @@
+project:
+  name: "nicu_module1"
+  module: "module1"
+  seed: 42
+
+fusion:
+  strategy: "or"
+  iou_threshold: 0.5
+  yolo_weight: 1.0
+  rtdetr_weight: 1.0
+  min_confidence: 0.0
+  agreement_bonus: 0.0
+  yolo_detections: "outputs/yolo/yolo_detections.csv"
+  rtdetr_detections: "outputs/rtdetr/rtdetr_detections.csv"
+  output_dir: "outputs/fusion"
+  save_annotated_frames: true
+
+sam2:
+  enabled: false
+  model_variant: "sam2.1_hiera_tiny"
+  # Official SAM 2 Hydra config name within the installed sam2 package.
+  model_config: "configs/sam2.1/sam2.1_hiera_t.yaml"
+  checkpoint: "models/sam2.1_hiera_tiny.pt"
+  device: "auto"
+  mask_threshold: 0.0
+  chunk_frames: 96
+  jpeg_quality: 100
+  offload_video_to_cpu: true
+  offload_state_to_cpu: true
+  min_prompt_confidence: 0.35
+  max_frames_without_box: 10
+  min_reprompt_interval: 3
+  reinitialize_on_unreliable: true
+  # Diagnostic heuristics, not calibrated segmentation probabilities.
+  min_mask_area_ratio: 0.002
+  max_mask_area_ratio: 0.9
+  min_detector_mask_consistency: 0.6
+  min_temporal_consistency: 0.1
+  min_mask_quality: 0.35
+  boundary_tolerance_px: 3
+  fallback_behavior: "bbox"
+  recovery_path: "outputs/recovery/recovery_results.csv"
+  output_dir: "outputs/sam2"
+  save_annotated_frames: true
+  roi_confidence:
+    enabled: false
+    # Choose a nonzero contribution on validation data; zero preserves Phase 10.
+    weight: 0.0
+
+pose:
+  source_root: "external/sapiens2"
+  model_config: "external/sapiens2/sapiens/pose/configs/keypoints308/shutterstock_goliath_3po/sapiens2_0.4b_keypoints308_shutterstock_goliath_3po-1024x768.py"
+  checkpoint: "models/sapiens2_0.4b_pose.safetensors"
+  device: "auto"
+  dtype: "float32"
+  recovery_path: "outputs/recovery/recovery_results.csv"
+  output_dir: "outputs/pose"
+  save_annotated_frames: true
+  quality:
+    confidence_threshold: 0.5
+    min_confident_fraction: 0.1
+    min_body_keypoints: 4
+    min_bone_length: 0.005
+    max_bone_length: 0.8
+    max_bilateral_ratio: 6.0
+    max_keypoint_speed: 3.0
+    max_temporal_gap_seconds: 0.5
+    min_temporal_keypoints: 4
+
+roi:
+  pose_dir: "outputs/pose"
+  output_dir: "outputs/roi"
+  min_keypoint_confidence: 0.5
+  min_support_points: 2
+  min_mask_support_ratio: 0.5
+  save_annotated_frames: true
+
+roi_quality:
+  roi_dir: "outputs/roi"
+  pose_dir: "outputs/pose"
+  output_dir: "outputs/roi_quality"
+  save_annotated_frames: true
+  parameters:
+    skin_cr_center: 150.0
+    skin_cb_center: 110.0
+    skin_cr_scale: 35.0
+    skin_cb_scale: 25.0
+    blur_scale: 500.0
+    motion_scale_pixels: 20.0
+    landmark_velocity_scale: 300.0
+    centroid_displacement_scale: 300.0
+    area_change_scale: 0.5
+
+confidence:
+  quality_dir: "outputs/roi_quality"
+  output_dir: "outputs/confidence"
+  regime: "equal_fixed"
+  top_k: 3
+  temperature: 1.0
+  validation_split: "validation"
+  training_split: "train"
+  min_training_rows: 10
+  ridge: 0.01
+  iterations: 800
+  learning_rate: 0.08
+  save_annotated_frames: true
+
+ablation:
+  ground_truth_path: null
+  fixed_roi_path: null
+  quality_path: "outputs/roi_quality/roi_quality_features.csv"
+  dynamic_path: "outputs/confidence/dynamic_roi.csv"
+  detection_path: "outputs/fusion/detection_fusion.csv"
+  recovery_path: "outputs/recovery/recovery_results.csv"
+  tracking_path: "outputs/tracking/bytetrack/tracking_results.csv"
+  output_dir: "reports"
+  detection_method: "or"
+  selection_strategy: "topk"
+  top_k: 3
+  save_visualizations: true
+
+recovery:
+  tracker: "bytetrack"
+  fusion_strategy: "or"
+  fusion_path: "outputs/fusion/detection_fusion.csv"
+  output_dir: "outputs/recovery"
+  max_recovery_frames: 10
+  min_recovery_confidence: 0.35
+  max_box_change: 0.3
+  max_center_displacement: 0.5
+  max_trajectory_error: 0.25
+  min_previous_iou: 0.25
+  min_anchor_iou: 0.5
+  confidence_decay: 0.9
+  min_pose_quality: 0.5
+  save_annotated_frames: true
+
+tracking:
+  fusion_path: "outputs/fusion/detection_fusion.csv"
+  fusion_strategy: "or"
+  output_dir: "outputs/tracking"
+  track_high_thresh: 0.25
+  track_low_thresh: 0.1
+  new_track_thresh: 0.25
+  match_thresh: 0.8
+  track_buffer: 30
+  min_hits: 3
+  primary_hold_frames: 15
+  nms_iou: 0.8
+  class_id: 0
+  fuse_score: true
+  gmc_method: "sparseOptFlow"
+  proximity_thresh: 0.5
+  appearance_thresh: 0.8
+  save_annotated_frames: true
+
+dataset:
+  source_name: "professor_provided_nicu_pilot"
+  root: "data"
+  video_dir: "data/Dataset"
+  manifest_path: "dataset_manifest.csv"
+  extensions: [".mp4", ".avi", ".mov", ".mkv"]
+
+processing:
+  target_fps: 20.0
+  preserve_native_fps: true
+  timestamp_mode: "frame_index_over_native_fps"
+
+experiment:
+  device: "auto"
+  confidence_thresholds:
+    detector: 0.25
+    pose: 0.50
+    roi: 0.50
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+
+outputs:
+  root: "outputs"
+  reports: "reports"
+
+
+detection:
+  yolo:
+    model_path: "models/yolo11s.pt"
+    class_id: 0
+    candidate_name: "infant_candidate"
+    confidence_threshold: 0.25
+    iou_threshold: 0.45
+    image_size: 640
+    selection_strategy: "highest_confidence"
+    save_all_candidates: true
+    save_annotated_frames: true
+    device: "auto"
+  rtdetr:
+    model_path: "models/rtdetr-l.pt"
+    class_id: 0
+    candidate_name: "infant_candidate"
+    confidence_threshold: 0.25
+    iou_threshold: 0.45
+    image_size: 640
+    selection_strategy: "highest_confidence"
+    save_all_candidates: true
+    save_annotated_frames: true
+    device: "auto"

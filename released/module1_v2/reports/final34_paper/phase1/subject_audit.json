@@ -1,0 +1,8 @@
+{
+  "method": "Manual visual audit (2026-11-02): 5 evenly spaced REJECT frames from every video that had rejections, judged for whether an adult is the dominant person in view.",
+  "frames_audited": 30,
+  "frames_correct": 5,
+  "correct_videos": ["VID_002"],
+  "false_videos": ["VID_001", "VID_005", "VID_013", "VID_026", "VID_029"],
+  "summary": "VID_002 shows a clinician holding the infant: its rejections are correct. In VID_001, VID_005, VID_013, VID_026 and VID_029 only the infant (at most an adult hand) is visible: those rejections are false."
+}

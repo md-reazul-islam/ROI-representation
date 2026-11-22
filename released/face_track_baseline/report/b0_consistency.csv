@@ -1,0 +1,8 @@
+run,windows,b0_max_abs_diff,b0_nan_mismatch
+ubfc_flat_38d8f553,137,0.0,0
+ubfc_aug,411,0.0,0
+ubfc_aug_fast,138,0.0,0
+ubfc_aug_fast_xl,46,0.0,0
+ubfc_swaddle_test,273,0.0,0
+ubfc_swaddle_motion,274,0.0,0
+ubfc_occdemo,46,0.0,0

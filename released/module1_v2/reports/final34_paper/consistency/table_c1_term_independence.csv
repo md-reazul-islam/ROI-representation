@@ -1,0 +1,10 @@
+score,method,max_abs_r,pair
+v1,pearson,1.0,visibility_term - skin_term
+v1,spearman,1.0,visibility_term - skin_term
+v2,pearson,0.4091439333619713,pose_term - visibility_keypoint
+v2,spearman,0.35211942326966544,pose_term - visibility_keypoint
+M vs M_n,all,0.9716381370719872,mean |M - M_n| = 0.007; n = 70241
+M vs M_n,respiratory regions,0.8566635031667545,mean |M - M_n| = 0.021; n = 7345
+M vs M_n,other regions,0.9813113561028672,mean |M - M_n| = 0.006; n = 62896
+M vs M_n,low camera motion,0.9953564326565051,mean |M - M_n| = 0.001; n = 23573
+M vs M_n,high camera motion,0.9345151233254316,mean |M - M_n| = 0.018; n = 22781
