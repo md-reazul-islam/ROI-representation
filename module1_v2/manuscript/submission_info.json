@@ -6,27 +6,27 @@
       "affiliations": [
         "a"
       ],
-      "email": "FILL: corresponding author e-mail",
-      "orcid": "",
-      "corresponding": true
-    },
-    {
-      "name": "FILL: co-author names (one entry per author; copy this block), e.g. the supervisor",
-      "affiliations": [
-        "a"
-      ],
       "email": "",
       "orcid": "",
       "corresponding": false
+    },
+    {
+      "name": "Ming-Ching Chang",
+      "affiliations": [
+        "a"
+      ],
+      "email": "mchang2@albany.edu",
+      "orcid": "",
+      "corresponding": true
     }
   ],
   "affiliations": {
-    "a": "FILL: department, university, city, postal code, country"
+    "a": "CVML Lab, University at Albany, State University of New York, Albany, NY, USA"
   },
   "declarations": {
     "credit": {
       "Md. Reazul Islam": "Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Visualization, Writing – original draft",
-      "FILL: co-author names (one entry per author; copy this block), e.g. the supervisor": "FILL: CRediT roles, e.g. Supervision, Writing – review & editing"
+      "Ming-Ching Chang": "Supervision"
     },
     "competing": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
     "funding": "FILL: funding sources with grant numbers, or: This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.",

@@ -14,10 +14,6 @@ Built 2026-11-22 by module1_v2/manuscript/build_submission.py --journal results_
 
 ## Still to fill in (shown as [FILL: ...] in the manuscript; edit submission_info.json and rebuild)
 
-- [ ] FILL: CRediT roles, e.g. Supervision, Writing – review & editing
-- [ ] FILL: co-author names (one entry per author; copy this block), e.g. the supervisor
-- [ ] FILL: corresponding author e-mail
-- [ ] FILL: department, university, city, postal code, country
 - [ ] FILL: funding sources with grant numbers, or: This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 - [ ] FILL: institutional review board determination for the use of the public web videos (e.g. exempt or not human-subjects research, with institution and protocol number)
 
@@ -39,7 +35,7 @@ Built 2026-11-22 by module1_v2/manuscript/build_submission.py --journal results_
 ## Build checks
 
 - Text width 7.10 in; layout issues: none
-- 9 figures, 13 tables, about 13,052 words including references
+- 9 figures, 13 tables, about 13,023 words including references
 - 59 references cited, renumbered in order of first appearance
 - Highlights (5): NeoSTAR is a learning-free, auditable dynamic ROI representation for newborn video (82 chars) | Temporal stabilization cut region switching from 9.9 to 0.18 switches per second (80 chars) | Surrogate-null and split-half tests check pulse evidence in the ROI without labels (82 chars) | In a PPG-referenced pilot, NeoSTAR prevented fixed-box failure under fast motion (80 chars) | A tracked face box was never more accurate than NeoSTAR in 19 test conditions (77 chars)
 - References not cited by the submission text and therefore not listed: none
